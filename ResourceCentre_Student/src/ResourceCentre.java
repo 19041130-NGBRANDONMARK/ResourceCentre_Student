@@ -180,8 +180,13 @@ public class ResourceCentre {
 	
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
-		// write your code here
-		return cb;
+		// write your code here // done by jx
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("Enter description > ");
+		String os = Helper.readString("Enter os > ");
+		
+		Chromebook cb1 = new Chromebook(tag, description, os);
+		return cb1;
 		
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
@@ -228,6 +233,7 @@ public class ResourceCentre {
 		// write your code here
 		
 		
+		
 	}
 	
 	//================================= Option 4 Return =================================
@@ -260,8 +266,14 @@ public class ResourceCentre {
 
 	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList,String tag){
 		boolean isReturned = false;
-		// write your code here
-		return isReturned;
+		for (int i =0; i < chromebookList.size(); i++) {
+			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag()) && chromebookList.get(i).getIsAvailable() == false) {
+				chromebookList.get(i).setIsAvailable(true);
+				chromebookList.get(i).setDueDate("");
+				isReturned = true;
+			}
+		}
+		return isReturned; // done by jx
 	}
 	public static void returnChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here // done by zeqian
