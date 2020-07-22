@@ -105,9 +105,7 @@ public class ResourceCentreTest {
 
 
         // test if the list of chromebook retrieved from the SourceCentre is empty
-        String allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
-        String testOutput = "";
-     
+ 
 		ResourceCentre.addChromebook(chromebookList, cb1);
 		ResourceCentre.addChromebook(chromebookList, cb2);
 		assertEquals("Test if that Chromebook arraylist size is 2?", 2, chromebookList.size());
