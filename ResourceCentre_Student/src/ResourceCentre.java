@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ResourceCentre {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //main method
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
 		ArrayList<Chromebook> chromebookList = new ArrayList<Chromebook>();
@@ -178,6 +178,8 @@ public class ResourceCentre {
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
+		chromebookList.add(cb); //done by Brandon
+		System.out.println("Chrombooke added"); //done by Brandon
 	}
 	
 	//================================= Option 3 Loan =================================
@@ -256,6 +258,11 @@ public class ResourceCentre {
 	public static void returnChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
 		// write your code here
+	}
+
+	public static void addCamcorder(ArrayList<Chromebook> chromebookList, Chromebook cb1) {
+		// TODO Auto-generated method stub
+		
 	}
 
 
