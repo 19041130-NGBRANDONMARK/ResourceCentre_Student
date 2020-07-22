@@ -101,7 +101,7 @@ public class ResourceCentreTest {
 		assertEquals("Check that ViewAllCamcorderlist", testOutput, allChromeBook);
 		
 		
-		
+				
 		
 		
 		
